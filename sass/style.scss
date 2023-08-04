@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+
+nav class {
+    background-color: white;
+
+    &:hover {
+        color: brown;
+    }
+}
+
 body#body-index {
     height: 100vh;
     display: grid;
@@ -38,11 +59,12 @@ main#main-index {
 #main-index #seccionUno #div-img {
     width: 400px;
     height: 300px;
+    
 }
 
 #main-index #seccionUno div img {
     width: 400px;
-    height: 300px;
+    height: 400px;
 }
 
 #main-index #seccionUno div iframe {
@@ -64,11 +86,13 @@ main#main-index {
 }
 
 footer {
+   align-items: center;
     grid-area: footer;
     background-color: rgb(154, 75, 46);
 }
 
 footer #footer-index {
+
     width: 400px;
     height: 150px;
     background-color: rgb(154, 75, 46);
@@ -111,3 +135,4 @@ footer #footer-index {
         }
     }
 }
+
